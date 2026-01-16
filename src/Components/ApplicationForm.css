@@ -1,0 +1,227 @@
+.application-form-container {
+  min-height: 100vh;
+  background: white;
+  padding: 40px 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.form-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.form-wrapper h1 {
+  background: linear-gradient(135deg, #0076b5be 0%, white 100%);
+  color: black;
+  margin: 0;
+  padding: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-subtitle {
+  color: #494949;
+  text-align: center;
+  margin: 20px 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.application-form {
+  padding: 40px;
+}
+
+.form-section {
+  margin-bottom: 40px;
+  padding: 30px;
+  background: #f8f9fa00;
+  border-radius: 15px;
+  border-left: 5px solid #0077b5;
+}
+
+.form-section h3 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 15px;
+  border: 2px solid #e1e5e9;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0077b5;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #e74c3c;
+  background: #fdf2f2;
+}
+
+.form-group input.error:focus,
+.form-group select.error:focus,
+.form-group textarea.error:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.file-info {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 30px;
+  background: #f8f9fa00;
+  border-radius: 15px;
+}
+
+.submit-button,
+.cancel-button {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.submit-button {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #0077b5;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(67, 166, 247, 0.3);
+}
+
+.submit-button:disabled {
+  background: #bdc3c700;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cancel-button {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.cancel-button:hover {
+  background: #0077b5;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .application-form-container {
+    padding: 20px 10px;
+  }
+
+  .form-wrapper {
+    margin: 0;
+    border-radius: 15px;
+  }
+
+  .form-wrapper h1 {
+    font-size: 2rem;
+    padding: 30px 20px;
+  }
+
+  .application-form {
+    padding: 30px 20px;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submit-button,
+  .cancel-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-wrapper h1 {
+    font-size: 1.5rem;
+    padding: 25px 15px;
+  }
+
+  .form-subtitle {
+    margin: 15px 20px;
+    font-size: 1rem;
+  }
+
+  .application-form {
+    padding: 20px;
+  }
+}

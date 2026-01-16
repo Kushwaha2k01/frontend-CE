@@ -1,0 +1,390 @@
+/* Team Section Styles */
+.team-section {
+  padding: 80px 0;
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.team-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.team-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Team Grid Layout */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-grid-single-line {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.team-grid-single-line::-webkit-scrollbar {
+  height: 8px;
+}
+
+.team-grid-single-line::-webkit-scrollbar-thumb {
+  background-color: #00d4ff;
+  border-radius: 4px;
+}
+
+.team-card-single {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 20px 15px;
+  text-align: center;
+  width: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card-single:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-color: #0077b5;
+}
+
+.team-card-image-single {
+  margin-bottom: 15px;
+}
+
+.profile-image-single {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0, 212, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.team-card-single:hover .profile-image-single {
+  border-color: #00d4ff;
+  transform: scale(1.05);
+}
+
+.team-card-content-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.member-name-single {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.member-position-single {
+  font-size: 0.9rem;
+  color: #0077b5;
+  margin: 0;
+}
+
+/* LinkedIn Link Styles */
+.linkedin-link-single {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #0077b5;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border: 1px solid #0077b5;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.linkedin-link-single:hover {
+  background-color: #0077b5;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Team Card Styles */
+.team-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: black;
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Profile Image Styles */
+.team-card-image {
+  margin-bottom: 25px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: transparent;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover .profile-image {
+  border-color: black;
+  transform: scale(1.02);
+}
+
+/* Content Styles */
+.member-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.member-position {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* LinkedIn Link Styles */
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.linkedin-link:hover {
+  background-color: #0077b5;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.linkedin-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive Design */
+
+/* Laptop (1024px and below) */
+@media (max-width: 1024px) {
+  .team-title {
+    font-size: 2.8rem;
+  }
+
+  .team-description {
+    font-size: 1.1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .team-card {
+    padding: 35px 25px;
+  }
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .team-section {
+    padding: 60px 0;
+  }
+
+  .team-title {
+    font-size: 2.5rem;
+  }
+
+  .team-description {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .team-card {
+    padding: 30px 20px;
+  }
+
+  .member-name {
+    font-size: 1.3rem;
+  }
+
+  .member-position {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .team-container {
+    padding: 0 15px;
+  }
+
+  .team-title {
+    font-size: 2rem;
+  }
+
+  .team-description {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-card {
+    padding: 25px 15px;
+  }
+
+  .member-name {
+    font-size: 1.2rem;
+  }
+
+  .member-position {
+    font-size: 0.85rem;
+  }
+
+  .linkedin-link {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+/* Small Mobile (360px and below) */
+@media (max-width: 360px) {
+  .team-container {
+    padding: 0 10px;
+  }
+
+  .team-title {
+    font-size: 1.8rem;
+  }
+
+  .team-description {
+    font-size: 0.95rem;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .team-card {
+    padding: 20px 10px;
+  }
+
+  .member-name {
+    font-size: 1.1rem;
+  }
+
+  .member-position {
+    font-size: 0.8rem;
+  }
+
+  .linkedin-link {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
+
+/* Animation for team cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.team-card:nth-child(1) { animation-delay: 0.1s; }
+.team-card:nth-child(2) { animation-delay: 0.2s; }
+.team-card:nth-child(3) { animation-delay: 0.3s; }

@@ -1,0 +1,146 @@
+.blog-section {
+  padding: 100px 0;
+  background: white;
+  min-height: 100vh;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  color: #000000 !important;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: #000000;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(20, 20, 20, 0.575);
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(76, 77, 77, 0.2);
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-image img {
+  transform: scale(1.1);
+}
+
+.blog-content {
+  padding: 25px;
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.blog-date {
+  font-weight: 600;
+}
+
+.blog-read-time {
+  background: rgba(0, 132, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.blog-content h3 {
+  font-size: 1.4rem;
+  color: #000000;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.blog-content p {
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more-btn {
+  background: white;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.read-more-btn:hover {
+  background: linear-gradient(45deg, #0080ff);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(39, 39, 39, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 60px 0;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+  
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .blog-card {
+    margin: 0 10px;
+  }
+}
