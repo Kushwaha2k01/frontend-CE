@@ -26,7 +26,7 @@ const Newsletter = () => {
       });
 
       if (response.ok) {
-        const data = await response.json();
+        await response.json();
         setIsSubscribed(true);
         setError('');
         setEmail('');
